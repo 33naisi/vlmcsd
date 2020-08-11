@@ -7,7 +7,7 @@ wmic os get caption
 #这个IP地址是你KMS服务器的地址
 slmgr.vbs -upk
 slmgr.vbs -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-slmgr.vbs -skms tx.imyuan.top
+slmgr.vbs -skms 192.168.0.1
 slmgr.vbs -ato
 slmgr.vbs -dlv
 
