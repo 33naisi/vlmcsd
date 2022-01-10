@@ -48,10 +48,11 @@ slmgr.vbs -rearm
 #Windows 10 Lean								NBTWJ-3DR69-3C4V8-C26MC-GQ9M6
 
 #激活office
+#（以OFFICE2013为例，安装位置为D盘）
 #一般ospp.vbs可以拖进去cmd窗口，所以也可以这么弄：
-cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" /sethst:192.168.1.1
+cscript "D:\Program Files (x86)\Microsoft Office\Office15\OSPP.VBS" /sethst:192.168.1.1
 #这个IP地址是你KMS服务器的地址
 #一般来说，“一句命令已经完成了”，但一般office不会马上连接kms服务器进行激活，所以我们额外补充一条手动激活命令：
-cscript ospp.vbs /act
+cscript "D:\Program Files (x86)\Microsoft Office\Office15\OSPP.VBS" /act
 #检查激活状态：
-cscript ospp.vbs /dstatus
+cscript "D:\Program Files (x86)\Microsoft Office\Office15\OSPP.VBS" /dstatus
